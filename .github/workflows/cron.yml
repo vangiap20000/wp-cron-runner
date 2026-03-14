@@ -12,4 +12,4 @@ jobs:
     steps:
       - name: Call WordPress cron
         run: |
-          curl -I https://tech-next-gen.lovestoblog.com/wp-cron.php
+          curl -A "Mozilla/5.0" https://tech-next-gen.lovestoblog.com/wp-cron.php || true
